@@ -150,4 +150,16 @@ Importing necessary libraries:
 
 - A for loop is used to iterate over each column in the dataset and print the number of unique values in each column using the nunique() function. The output shows that each column has a varying number of unique values, ranging from 2 (default, housing, loan, subscription) to 7,168 (balance).
 
+## Printing categorical columns
+
+- A list comprehension is used to identify the categorical columns in the dataset by checking the data type of each column. The output shows that there are 10 categorical columns.
+
+## Printing a few rows of the categorical columns
+
+- The head() function is used to display the first few rows of the categorical columns. The output shows the values for each categorical column.
+
+## Quickly identifying the number of distinct categories for each categorical feature
+
+- A for loop is used to iterate over each categorical feature and print the number of unique categories using the unique() function. The output shows the number of categories for each feature, ranging from 2 (default, housing, loan, subscription) to 12 (job, month).
+
 
