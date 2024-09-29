@@ -163,3 +163,34 @@ Importing necessary libraries:
 - A for loop is used to iterate over each categorical feature and print the number of unique categories using the unique() function. The output shows the number of categories for each feature, ranging from 2 (default, housing, loan, subscription) to 12 (job, month).
 
 
+Plotting all categorical variables with different colors:
+- The select_dtypes() function is used to select only the categorical columns from the dataset.
+- A for loop is used to iterate over each categorical column and create a count plot using sns.countplot(). The palette parameter is used to apply a color palette to the plot.
+- The title() function is used to set the title of the plot, and the xticks() function is used to rotate the x-axis labels for better readability.
+
+## Pie diagram for subscription proportion
+
+- The value_counts() function is used to count the number of occurrences of each unique value in the 'subscription' column.
+  
+- The plot.pie() function is used to create a pie chart of the subscription proportion. The autopct parameter is used to display the percentage value of each slice, and the colors parameter is used to specify the colors of the slices.
+  
+- The title() function is used to set the title of the plot, and the ylabel() function is used to remove the y-axis label.
+
+## Finding the relationship between categorical features and the target variable (subscription)
+
+- A list of categorical features is defined, and a for loop is used to iterate over each feature.
+  
+- For each feature, a count plot is created using sns.countplot(), with the feature on the x-axis and the target variable ('subscription') as the hue.
+  
+- The title() function is used to set the title of the plot, and the xticks() function is used to rotate the x-axis labels for better readability.
+
+## Checking counts of target variable split by each categorical feature:
+
+- A for loop is used to iterate over each categorical feature.
+- 
+- For each feature, the groupby() function is used to group the data by the feature and the target variable ('subscription'), and the size() function is used to count the number of occurrences in each group.
+  
+- The unstack() function is used to reshape the data into a pivot table, and the fillna(0) function is used to replace missing values with 0.
+- The resulting counts are printed to the console.
+
+
