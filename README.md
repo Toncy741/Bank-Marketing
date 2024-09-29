@@ -264,6 +264,26 @@ Plotting all categorical variables with different colors:
   
 - The resulting dataframe is assigned to a new variable df_cleaned.
 
+## Calculating the correlation matrix
+
+- The corr() function is used to calculate the correlation matrix of the dataframe. This produces a square matrix where each entry represents the correlation coefficient between two variables.
+
+## Creating a correlation heatmap
+
+- The correlation matrix is assigned to a variable correlation_matrix.
   
+- A heatmap is created using sns.heatmap() to visualize the correlation matrix. The annot=True parameter is used to display the correlation coefficients on the
+  
+heatmap, and the cmap='coolwarm' parameter is used to specify the color scheme. The fmt='.2f' parameter is used to format the correlation coefficients to two
+
+decimal places, and the linewidths=0.5 parameter is used to add a small gap between the cells.
+  
+- The title() function is used to set the title of the plot, and the show() function is used to display the plot.
+
+## Understanding the relationship between different variables
+
+- A list of numerical columns is defined, and the pairplot() function from Seaborn is used to create a pair plot of the selected columns. This plot shows the distribution of each variable and the relationships between each pair of variables.
+  
+- The show() function is used to display the plot.  
 
 
