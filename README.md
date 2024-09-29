@@ -90,6 +90,7 @@ Output variable (desired target)
 
 17 - y - has the client subscribed a term deposit? (binary: "yes","no")
 
+## BELOW IS WHAT I DID IN THE DATASET
 
 ## first step of this project
 
@@ -474,3 +475,39 @@ Setting labels and title
 Displaying the plot
 
 - The show() function is used to display the plot.
+
+## Saving the model
+
+- The pickle library is imported for serializing the model.
+  
+- The best model is saved to a file named 'best_model.pkl' using the dump() function.
+
+## Testing with unseen data
+
+- The accuracy_score, classification_report, and confusion_matrix functions from scikit-learn are imported for evaluating the model's performance.
+  
+- The best model is used to make predictions on the unseen data using the predict() method.
+  
+- The accuracy, classification report, and confusion matrix of the model on the unseen data are printed using the accuracy_score, classification_report, and confusion_matrix functions, respectively.
+
+## Interpretation of results (conclusion)
+
+- The best model, its accuracy on the training data, and its accuracy on the unseen data are printed using the best_estimator_ attribute, best_score_ attribute, and accuracy_score function, respectively.
+
+## Future work
+
+- A list of potential future work is printed, including exploring deep learning algorithms, updating the model periodically, addressing imbalanced data, and adding more features to the dataset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
