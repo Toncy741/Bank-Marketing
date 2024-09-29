@@ -35,3 +35,11 @@ efforts, such as the number and outcome of previous contacts.
 With a dataset that encompasses over 41,000 observations and 20 features,
 
 this project will focus on identifying patterns and trends to predict
+
+whether a customer will subscribe to a term deposit. By leveraging machine
+ 
+learning algorithms, the goal is to improve the bank's ability to target
+ 
+potential customers, optimize marketing resources, and increase campaign
+  
+success rates.
