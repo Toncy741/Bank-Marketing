@@ -370,4 +370,25 @@ decimal places, and the linewidths=0.5 parameter is used to add a small gap betw
 ## Printing the selected features with their scores
 - The selected features with their scores are printed to the console using the print() function.
   
-## allso ploting the feature score
+### allso ploting the feature score
+
+# Feature Scaling
+
+- The StandardScaler, MinMaxScaler, and RobustScaler classes from scikit-learn are imported for feature scaling.
+- The ColumnTransformer class from scikit-learn is imported for applying transformations to specific columns of a dataframe.
+
+Defining functions
+
+- The handle_infinite_values() function is defined to replace infinite values with NaN and drop rows with NaN values.
+- The handle_extreme_values() function is defined to clip extreme values to a specified threshold.
+- The scale_data() function is defined to scale the specified columns of a dataframe using the chosen method.
+
+  Scaling data
+  
+- The scale_data() function is called with the dataframe, scaling method, and columns to scale as arguments.
+  
+- The function handles infinite and extreme values, selects the appropriate scaler based on the chosen method, and applies the scaling transformation to the specified columns.
+  
+- The scaled dataframe is returned and assigned to the scaled_df variable.
+
+  
