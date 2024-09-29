@@ -65,7 +65,7 @@ bank client data
 
 8 - loan: has personal loan? (binary: "yes","no")
 
-# related with the last contact of the current campaign:
+## related with the last contact of the current campaign:
 
 9 - contact: contact communication type (categorical: "unknown","telephone",
 "cellular")
@@ -76,7 +76,7 @@ bank client data
 
 12 - duration: last contact duration, in seconds (numeric)
 
-# other attributes:
+## other attributes:
 
 13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
 
