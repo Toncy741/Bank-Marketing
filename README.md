@@ -16,7 +16,7 @@ are influenced by a variety of factors, including their demographics,
 financial circumstances, and past interactions with the bank.
 
 
-# Objective
+## Objective
 
 To address this challenge, this project aims to develop a predictive
 
@@ -44,7 +44,7 @@ potential customers, optimize marketing resources, and increase campaign
   
 success rates.
 
-# Features
+## Features
 
 bank client data
 
