@@ -138,4 +138,16 @@ Importing necessary libraries:
 
 - The describe() function is used to display summary statistics for the dataset, including count, mean, standard deviation, minimum, 25th percentile, median (50th percentile), 75th percentile, and maximum values. The output shows that the dataset has a wide range of values for each column.
 
+## Printing information about the dataset
+
+- The info() function is used to display information about the dataset, including the number of entries, data types, and memory usage. The output shows that the dataset has 45,211 entries, 17 columns, and a mix of integer (int64) and object (object) data types.
+
+## Checking for null values
+
+- The isnull().sum() function is used to display the number of null values in each column. The output shows that there are no null values in any of the columns.
+
+## Finding features with one value
+
+- A for loop is used to iterate over each column in the dataset and print the number of unique values in each column using the nunique() function. The output shows that each column has a varying number of unique values, ranging from 2 (default, housing, loan, subscription) to 7,168 (balance).
+
 
