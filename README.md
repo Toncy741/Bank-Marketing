@@ -322,6 +322,51 @@ decimal places, and the linewidths=0.5 parameter is used to add a small gap betw
   
 - A barplot is created using the barplot() function from Seaborn, with the importance scores on the x-axis and the feature names on the y-axis. The palette='viridis' parameter is used to specify the color scheme.
 
+  ## selectKBest
 
+- The SelectKBest class from scikit-learn is imported for feature selection.
+  
+- The f_classif function from scikit-learn is imported as the scoring function for feature selection.
+  
+- The SimpleImputer class from scikit-learn is imported for handling missing values.
 
+## Preparing the data
+
+- The feature matrix X is defined by dropping the target column ('subscription') from the dataframe.
+  
+- The target variable y is assigned to the 'subscription' column.
+  
+- Infinite values in the feature matrix are replaced with NaN using the replace() function.
+  
+- Non-numeric values in the feature matrix are converted to NaN using the apply() function with pd.to_numeric() and errors='coerce'.
+
+## Handling missing values
+
+- The SimpleImputer class is used to impute missing values in the feature matrix, with the strategy set to 'mean'.
+- The imputed feature matrix is assigned to the X_imputed variable.
+
+## Feature selection using SelectKBest
+
+- The SelectKBest class is instantiated with the f_classif scoring function and the number of top features to select (k=10)
+  
+- The fit_transform() method is used to fit the selector to the imputed feature matrix and target variable, and to transform the feature matrix to select the top features.
+  
+- The selected feature names are obtained using the get_support() method and assigned to the selected_features variable.
+
+## Getting feature scores
+
+- The feature scores are obtained using the scores_ attribute of the selector and assigned to the feature_scores variable.
+  
+- A dataframe is created to display the scores of all features, with the feature names as the index and the scores as the values.
+  
+- A new column 'Selected' is added to the dataframe to indicate whether each feature is selected or not.
+
+## Filtering and sorting the dataframe
+
+- The dataframe is filtered to show only the selected features using boolean indexing.
+  
+- The dataframe is sorted by scores in descending order using the sort_values() function.
+
+## Printing the selected features with their scores
+- The selected features with their scores are printed to the console using the print() function.
 
