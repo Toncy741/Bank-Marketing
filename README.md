@@ -203,6 +203,19 @@ Plotting all categorical variables with different colors:
   
 - The head() function is used to display the first few rows of the numerical features.
 
+## Finding discrete numerical features
+
+- A list comprehension is used to identify the discrete numerical features in the dataset by checking if the number of unique values in each feature is less than 25.
+  
+- The length of the discrete_feature list is printed to the console, indicating that there are 0 discrete variables in the dataset.
+
+## Plotting histograms for numerical variables
+- The select_dtypes() function is used to select only the numerical columns from the dataset.
+  
+- A for loop is used to iterate over each numerical column and create a histogram using sns.histplot(). The kde=True parameter is used to display the kernel density estimate (KDE) of the distribution, and the color parameter is used to specify the color of the histogram.
+  
+- The title() function is used to set the title of the plot, and the show() function is used to display the plot.
+
   
 
 
