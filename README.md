@@ -369,4 +369,5 @@ decimal places, and the linewidths=0.5 parameter is used to add a small gap betw
 
 ## Printing the selected features with their scores
 - The selected features with their scores are printed to the console using the print() function.
-
+  
+## allso ploting the feature score
