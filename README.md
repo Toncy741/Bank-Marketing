@@ -434,5 +434,22 @@ Printing the best model
 
 - The best model is printed along with its accuracy, precision, recall, F1-score, and cross-validation accuracy.
 
+## hyperparameter tuning space 
 
+- The GridSearchCV class from scikit-learn is imported for performing hyperparameter tuning.
+- The GaussianNB class from scikit-learn is imported for building a Naive Bayes model.
+
+Defining hyperparameter tuning space
+
+- A dictionary is defined for each model to specify the hyperparameters to tune and their possible values.
+- For example, the param_grid_log dictionary defines the hyperparameters C and penalty for the logistic regression model, with possible values [0.1, 1, 10] and ['l1', 'l2'], respectively.
+
+Performing hyperparameter tuning
+
+- An instance of the GridSearchCV class is created for each model, passing the model, hyperparameter tuning space, and other parameters such as the number of folds for cross-validation (cv) and the scoring metric (scoring).
+- The fit() method is called on each instance to perform the hyperparameter tuning.
+
+Printing the results
+
+- The best parameters and best scores for each model are printed using the best_params_ and best_score_ attributes of the GridSearchCV instances.
  
