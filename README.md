@@ -68,3 +68,27 @@ Importing necessary libraries:
 * Printing the last 10 rows of the dataset:
   
 - The tail() function is used to display the last 10 rows of the dataset. This can be useful in identifying any patterns or anomalies at the end of the dataset.
+  
+
+- Renaming the 'y' column to 'subscription'
+  
+ The rename() function is used to rename the 'y' column to 'subscription'. The inplace=True parameter ensures that the changes are made directly to the original dataframe.
+
+# Printing the column names
+
+ The columns attribute is used to display the column names of the dataframe. The output shows that the 'y' column has been successfully renamed to 'subscription'.
+
+# Printing the shape and size of the dataset
+
+- The shape attribute is used to display the number of rows and columns in the dataset. The output shows that the dataset has 45,211 rows and 17 columns.
+- The size attribute is used to display the total number of elements in the dataset. The output shows that the dataset has 768,587 elements.
+
+# Printing the data types of each column:
+
+- The dtypes attribute is used to display the data types of each column in the dataset. The output shows that the columns have a mix of integer (int64) and object (object) data types.
+
+# Printing summary statistics for the dataset
+
+- The describe() function is used to display summary statistics for the dataset, including count, mean, standard deviation, minimum, 25th percentile, median (50th percentile), 75th percentile, and maximum values. The output shows that the dataset has a wide range of values for each column.
+
+
