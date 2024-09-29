@@ -49,17 +49,17 @@ success rates.
 Importing necessary libraries:
 
 - pandas (as pd) for data manipulation and analysis.
-- 
+ 
 - numpy (as np) for numerical computations.
-- 
+  
 - matplotlib.pyplot (as plt) and seaborn (as sns) for data visualization.
-- 
+ 
 - warnings to suppress warning messages.
 
 # Loading the dataset
 
 - The dataset is loaded from a CSV file named bank-full.csv using pd.read_csv(). The sep=';' parameter indicates that the CSV file uses semicolons as the delimiter.
-- 
+  
 
 * Printing the first 10 rows of the dataset:
   
