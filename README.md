@@ -1,4 +1,4 @@
-# Bank-Marketing
+## Bank-Marketing
 
 
 In the banking sector, direct marketing campaignS are a key method for
@@ -452,4 +452,25 @@ Performing hyperparameter tuning
 Printing the results
 
 - The best parameters and best scores for each model are printed using the best_params_ and best_score_ attributes of the GridSearchCV instances.
+
+ ## visualize the results of hyperparameter tuning for different machine learning models. 
+
+ Creating a figure
  
+- The figure() function is used to create a new figure with a specified size (10x6 inches).
+
+Creating a bar plot
+
+- The bar() function is used to create a bar plot of the best scores for each model.
+- The x-axis represents the models, and the y-axis represents the accuracy.
+- The best_score_ attribute of each GridSearchCV instance is used to get the best score for each model.
+
+Setting labels and title
+
+- The xlabel() function is used to set the label of the x-axis to 'Model'.
+- The ylabel() function is used to set the label of the y-axis to 'Accuracy'.
+- The title() function is used to set the title of the plot to 'Hyperparameter Tuning Results'.
+
+Displaying the plot
+
+- The show() function is used to display the plot.
