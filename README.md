@@ -187,10 +187,22 @@ Plotting all categorical variables with different colors:
 ## Checking counts of target variable split by each categorical feature:
 
 - A for loop is used to iterate over each categorical feature.
-- 
+ 
 - For each feature, the groupby() function is used to group the data by the feature and the target variable ('subscription'), and the size() function is used to count the number of occurrences in each group.
   
 - The unstack() function is used to reshape the data into a pivot table, and the fillna(0) function is used to replace missing values with 0.
 - The resulting counts are printed to the console.
+
+## Exploring numerical features
+
+- A list comprehension is used to identify the numerical features in the dataset by checking the data type of each column.
+  
+-  The dtypes attribute is used to check if the data type is not 'O' (object), and the feature not in ['deposit'] condition is used to exclude the 'deposit' column.
+  
+- The length of the numerical_features list is printed to the console, indicating that there are 7 numerical variables in the dataset.
+  
+- The head() function is used to display the first few rows of the numerical features.
+
+  
 
 
