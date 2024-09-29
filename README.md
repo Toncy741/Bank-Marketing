@@ -216,6 +216,30 @@ Plotting all categorical variables with different colors:
   
 - The title() function is used to set the title of the plot, and the show() function is used to display the plot.
 
+
+## Boxplots for each numerical feature against subscription
+
+- A list of numerical columns is defined, and a for loop is used to iterate over each column.
+  
+- For each column, a boxplot is created using sns.boxplot() to visualize the distribution of the column against the subscription outcome.
+  
+- The title() function is used to set the title of the plot, and the show() function is used to display the plot.
+
+## Handling outliers
+
+- A list of numerical columns is defined, and a for loop is used to iterate over each column.
+  
+- For each column, the 25th percentile (Q1) and 75th percentile (Q3) are calculated using the quantile() function.
+  
+- The interquartile range (IQR) is calculated as the difference between Q3 and Q1.
+  
+- The lower and upper bounds for detecting outliers are defined as Q1 - 1.5IQR and Q3 + 1.5IQR, respectively.
+  
+- The outliers are identified and removed from the dataset using boolean indexing.
+  
+- A new boxplot is created using sns.boxplot() to visualize the distribution of the column against the subscription outcome without outliers.
+- The count of removed outliers is printed to the console
+
   
 
 
