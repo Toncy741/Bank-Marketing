@@ -78,7 +78,18 @@ bank client data
 
 # other attributes:
 
-13 - campaign: number of contacts performed d
+13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+
+14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
+
+15 - previous: number of contacts performed before this campaign and for this client (numeric)
+
+16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+
+Output variable (desired target)
+
+17 - y - has the client subscribed a term deposit? (binary: "yes","no")
+
 
 # first step of this project
 
