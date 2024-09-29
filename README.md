@@ -240,6 +240,30 @@ Plotting all categorical variables with different colors:
 - A new boxplot is created using sns.boxplot() to visualize the distribution of the column against the subscription outcome without outliers.
 - The count of removed outliers is printed to the console
 
+## Converting categorical data to numerical data using LabelEncoder
+
+- The LabelEncoder class from scikit-learn is imported and initialized.
+  
+- The fit_transform() method is used to apply label encoding to each categorical column in the dataset. This converts the categorical values into numerical values
+  
+- The encoded columns are assigned back to the original dataframe.
+
+## Printing the first 10 rows after encoding
+
+- The head() function is used to display the first 10 rows of the encoded dataframe.
+
+## Removing rows where pdays contains -inf
+
+- The df dataframe is filtered to remove rows where the 'pdays' column contains -inf values.
+  
+- The resulting dataframe is assigned back to the df variable.
+
+## Removing all rows with NaN values
+
+- The dropna() function is used to remove all rows with NaN values from the df dataframe
+  
+- The resulting dataframe is assigned to a new variable df_cleaned.
+
   
 
 
