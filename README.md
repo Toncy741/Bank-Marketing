@@ -284,6 +284,44 @@ decimal places, and the linewidths=0.5 parameter is used to add a small gap betw
 
 - A list of numerical columns is defined, and the pairplot() function from Seaborn is used to create a pair plot of the selected columns. This plot shows the distribution of each variable and the relationships between each pair of variables.
   
-- The show() function is used to display the plot.  
+- The show() function is used to display the plot.
+
+## Splitting data into training and testing sets
+
+- The drop() function is used to drop the target column ('subscription') from the dataframe to get the feature matrix X.
+  
+- The target variable y is assigned to the 'subscription' column.
+  
+- The train_test_split() function from scikit-learn is used to split the data into training and testing sets, with 80% of the data used for training and 20% used for testing.
+  
+- The random_state parameter is set to 42 for reproducibility.
+
+## Random Forest for feature importance
+
+- The RandomForestClassifier class from scikit-learn is imported, and an instance of the class is created with 100 estimators and a random state of 42.
+  
+- The feature matrix X and target variable y are defined.
+  
+- Infinite values in the feature matrix are replaced with NaN using the replace() function.
+  
+- Missing values in the feature matrix are imputed using the SimpleImputer class from scikit-learn, with the strategy set to 'mean'.
+  
+- The Random Forest model is fit to the imputed feature matrix and target variable using the fit() method.
+  
+- The feature importance scores are obtained using the feature_importances_ attribute of the Random Forest model.
+  
+- A dataframe is created to display the feature importance scores, with the feature names as the index and the importance scores as the values.
+  
+- The dataframe is sorted by importance score in descending order using the sort_values() function.
+  
+- The sorted feature importance dataframe is printed to the console.
+
+## Visualizing feature importance with a barplot
+
+- A figure with a size of 10x6 inches is created using the figure() function.
+  
+- A barplot is created using the barplot() function from Seaborn, with the importance scores on the x-axis and the feature names on the y-axis. The palette='viridis' parameter is used to specify the color scheme.
+
+
 
 
