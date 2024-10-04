@@ -32,7 +32,7 @@ level, and financial history, as well as details about the marketing
   
 efforts, such as the number and outcome of previous contacts.
 
-With a dataset that encompasses over 41,000 observations and 20 features,
+With a dataset that encompasses over 41,000 observations and 17 features,
 
 this project will focus on identifying patterns and trends to predict
 
